@@ -1,0 +1,394 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+
+       section{
+        display: gride;
+        align-items: center;
+        place-items: center;
+        min-height: 90vh;
+       }
+
+       body {
+        background-color: rgb(0, 0, 0);
+        transition: .5;
+       }
+
+       /* Estilo do Menu */
+       header {
+        background-color: rgb(0, 0, 0);
+        padding: 16px 0;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        text-align:center;
+        z-index: 2;
+       }
+
+    
+       .cabeçalho-link{
+        text-align: center;
+        display:flex;
+        gap: 2rem;
+        font-weight: 300;
+        cursor: pointer;
+       }
+
+       .cabeçalho-link a{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+       }
+
+       .cabeçalho-link a:hover{
+        color: rgb(255, 81, 0);
+        transition: 0.3s all;
+       }
+
+       button{
+        color: rgb(255,85,0);
+        background: transparent;
+        border: solid 1px rgb(255, 85, 0);
+        padding: 5px;
+        border-radius: 15px;
+        font-size: 15px;
+        width: 120px;
+        cursor: pointer;
+       }
+
+       button:hover{
+        background-color: rgb(255, 85, 0);
+        color: white;
+        transition: 0.5s;
+
+       }
+
+      /* Estilo da página inicial */
+       .image-container {
+        background: url(imagens/software3.0.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 700px;
+       }
+    
+
+       .container-text{
+        padding: 200px 0 0 300px;
+       }
+
+       .container-text h4{
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+
+       }
+
+       .redes-sociais{
+        padding: 10px;
+       }
+
+       .redes-sociais a{
+        padding: 15px;
+        margin-top: 10px;
+       }
+
+       .redes-sociais button{
+        border-radius: 50px;
+       }
+       
+
+       /* estilo sobre mim */
+      .section>.interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+       }
+
+       .icone-sobre{
+        padding: 50px;
+       }
+       
+        .section .text-sobre p {
+         color: white;
+         font-size: 20px;
+         padding: 30px;
+         line-height: 1.4;
+
+       }
+       .titulo-section{
+        padding: 30px;
+       }
+
+       /* Estilo Tecnologia que trabalho */
+       .tecnologias-logo .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 900px;
+        height: 550px; 
+        border: 4px solid;
+        border-color: rgb(255, 85, 0);
+        border-radius: 50px 80px;
+        align-items: center;
+        border-top: 5px;
+       }
+
+       .tecnologias-logo h1{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin-top: 70px;
+       }
+
+       .tecnologias-logo p{
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        text-align: center;
+
+       }
+       .titulo{
+        padding: 30px;
+       }
+
+       .container .logo-tec{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        cursor: pointer;
+        margin-left: 50px;
+       }
+
+       .container .font{
+        text-shadow: 0 0 3px #ff6200, 0 0 5px #ff5e00;
+        text-align: center;
+        padding: 50px;
+        margin-top: auto;
+       }
+        .container .logo-tec:hover .icone-tec{
+            display: block;
+        }
+
+       .container .logo-tec:hover {
+        transform: scale(1.5);
+        transition: 1s;}
+
+       .container .icone-tec{
+          display: none;
+          align-items: center;
+          background-color: rgb(255, 81, 0);
+          color: #fff;
+          text-align: center;
+          border-radius: 5px;
+          padding: 5px;
+          position: absolute;
+          bottom: 100%;
+          left: 25%;
+       }
+
+       /* Estilo Minhas Habilidades */
+       .container-habilidade {
+         color: white;
+         font-size: 20px;
+         padding-left: 100px;
+         padding-right: 110px;
+         padding-bottom: 100px;
+         line-height: 1.2;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: 1000px;
+         height: 100%; 
+         border: 4px solid;
+         border-color: rgb(255, 85, 0);
+         border-radius: 50px 80px;
+         align-items: center;
+         border-top: 5px;
+         margin-top: auto;
+         margin-bottom: 100px;
+       }
+
+       .container-habilidade .txt{
+          border-radius: 15px;
+          background: rgb(255, 85, 0);
+          border: 3px solid white;
+          padding: 20px; 
+          width: 300px;
+          height: 70px;
+          color: white;
+         font-size: 18px;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         position: relative;
+         text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+         cursor: pointer;
+         margin-top: 100px;
+          text-align: center;
+          
+       }
+
+       .txt .hab {
+         display: none;
+         color: #fff;
+         text-align: center;
+         padding: 5px;
+         position: absolute;
+         bottom: 150%;
+         width: 150px;
+         top: 100%;
+         align-items: center;
+        }
+
+        .container-habilidade .txt:hover{
+             transform: scale(1.2);
+             transition: 2s;
+             }
+
+        .container-habilidade .txt:hover .hab{
+            display: block;
+        }
+
+         .container-habilidade .hab{
+            width: 500px;
+            text-align: justify;
+            font-size: 15px;
+            margin-bottom: auto;
+            height: auto;
+
+        }
+        /* Estilo Meus serviços contratáveis */
+        .serviços{
+         color: white;
+         font-size: 20px;
+         padding-left: 80px;
+         padding-right: 80px;
+         padding-bottom: 60px;
+         display:flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: 1200px;
+         height: 100%; 
+         border: 4px solid;
+         border-color: rgb(255, 85, 0);
+         border-radius: 50px ;
+         align-items: center;
+         border-top: 5px;
+        }
+        .caixa {
+            border-radius: 15px;
+            border: 2px solid ;
+            border-color: rgb(255, 85, 0);
+            height: 100%;
+            width: 400px;
+            position: relative;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor:pointer;
+            align-items: center;
+            margin-top: 90px;
+            justify-content: space-between;
+            
+        }
+
+        .caixa:hover{
+            transform: scale(1.2);
+            transform: 2s;
+        }
+        .ft {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .serviços h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: -1px 0 rgb(255, 85, 0), 0 1px rgb(255, 85, 0), 1px 0 rgb(255, 85, 0), 0 -1px rgb(255, 85, 0);
+            padding-bottom:20px;
+        }
+
+         /* Estilo Projetos */
+        .section .text{
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px rgb(255, 85, 0), 0 0 25px rgb(255, 85, 0), 0 0 5px rgb(255, 85, 0);
+            margin: 16px 0 48px 0;
+        }
+
+        .section .container-proj {
+            display: flex;
+            gap: 24px;
+        }
+        .container-proj .project-box{
+            min-width: 300px;
+            height: 300px;
+            border: 2px solid rgb(255, 85, 0);
+            border-radius: 15px;
+            background-size: cover;
+
+        }
+
+
+        .container-proj .proje1{
+            background-image: url(imagens/slid.png);
+            width: 100px;
+            height: 300px;
+            position: relative;
+        }
+
+         .container-proj .proje2{
+            background-image: url(imagens/Previsão-tempo.png);
+            align-items: center;
+            width: 100px;
+            height: 300px;
+            position: relative
+        }
+         .info-project p{
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 130px;
+            padding-bottom: 100%;
+            background: rgba(0, 0, 0, 0.539);
+            width: 100%;
+            
+        }
+         .project-box:hover p {
+            display: none;
+        }
+        .tex{
+        display: none;
+        color: white;
+        align-items: center;
+        text-align: justify;
+        position: absolute;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 5px;
+        height: 80px;
+        width: 100%;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.539);
+       }
+
+       .container-proj .project-box:hover .tex{
+        display: block;
+       }
+
+       .container-proj .project-box:hover{
+        cursor: pointer;
+        transform: scale(1.3);
+        transition: 2s;
+       }
+       
