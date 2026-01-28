@@ -1,286 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="style.css">
-
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Crislaine Caetano</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>      
-    <!-- Menu -->
-    <header>
-            <div class="fontenome"><span style="color: rgb(235, 233, 232); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 25px;">Crislaine</span><br><span style="color: rgb(255, 85, 0); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 25px;">Caetano</span></div>
-            <div class="cabeçalho-link">
-                 <li>
-                    <a href="#inicio" class="actived js-link" >Home</a>
-                </li>
-                <li>
-                    <a href="#sobre-mim" class="js-link">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#tecnologias-que-trabalho" class="js-link">Tecnologia que trabalho</a>
-                </li>
-                <li>
-                    <a href="#minhas-habilidades" class="js-link">Minhas Habilidades</a>
-                </li>
-                
-                <li>
-                    <a href="#msc" class="js-link">Meus serviços contratáveis</a>
-                </li>
-                <li>
-                    <a href="#mp" class="js-link">Meus projetos</a>
-                </li>
-                <li>
-                    <a href="#mp" class="js-link">Formação Acadêmica</a>
-                </li>
-                <li>
-                    <!-- link para meu currículo -->
-                    <a href="file:///C:/Users/crislainecaetano/OneDrive/Documentos/curriculo/curriculo.pdf">Currículo</a>
-                </li>
-                <br>
-                 <!-- link para meu whatsapp -->
-                <a href="https://wa.link/llwejl">
-                    <button>Meu Contato</button>
-                </a>
-            </div>
-        </header>
-        <!-- Página inicial -->
-        <main>
-            <!-- Todas as section tem id que direciona as paginas  -->
-            <section class="section" id="inicio">
-            <div class="image-container">
-                <div class="caixa-main">
-                   <div class="foto"><img src="imagens/foto.jpg" width="200px" height="200px" alt="foto"></div>
-                   <div class="container-text">
-                      <h1>Crislaine Caetano</h1>
-                      <h2>Estudante de Engenharia de Software</h2>
-                       <span>
-                            <!-- links para minhas redes sociais -->
-                        <a href="https://www.instagram.com/crislaine_caetano2?igsh=MTNmb292OTE2cDBlZA=="><button><img src="imagens/intagram1.png" alt="instagram"></button></a>
-                        <a href="mailto:criscaetano12k@gmail.com"><button><img src="imagens/gmail1.png" alt="gmail1" width="25px" height="25px"></button></a>
-                        <a href="https://www.linkedin.com/in/crislaine-caetano-968a20350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button><img src="imagens/linkdim1.png" alt="linkdin" width="25px" height="25px"></button></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            </section>
-            <!-- Página Sobre Mim -->
-            <section class="section" id="sobre-mim">
-                <div class="interface">
-                   <div class="text-sobre">
 
-                    <h1 class="titulo-section"><span style="color: rgb(255, 85, 0); font-size: 50px;">Sobre Mim</span></h1>
+<body>
 
-                    <p>Sou estudante de Engenharia de Software no Centro Universitário Internacional (UNINTER), <br>e tenho como uma das minhas paixões transmitir experiências incríveis e envolventes para os usuários. <br>Sou uma profissional que estou sempre buscando me aperfeiçoar e aprender novas tecnologias.
-                        <br><br>Fui apresentada  ao mundo da tecnologia, online e desde então sempre amei estar nessa área. <br> 
-                        Estou sempre em busca de melhorar minhas habilidades e conhecimento para que posso  <br> experimentar as tecnologias mais recentes.
-                    </p>
-                   </div>  
-                    <div class="icone-sobre">
-                        <img src="imagens/icone-software.png" alt="icone sobre mim" width="400px" height="400px">
-                    </div>  
-                </div>
-            </section>
-            <!-- Página Tecnologia que trabalho -->
-            <section class="section" id="tecnologias-que-trabalho">
-                <h1 class="titulo"><span style="color: rgb(255, 85, 0); font-size: 50px;"> Tecnologia que Trabalho</span></h1>
-                <div class="tecnologias-logo">
+<header class="header">
+  <nav class="menu">
+    <a href="#inicio" class="js-link">Home</a>
+    <a href="#sobre" class="js-link">Sobre</a>
+    <a href="#tecnologias" class="js-link">Tecnologias</a>
+    <a href="#habilidades" class="js-link">Habilidades</a>
+    <a href="#projetos" class="js-link">Projetos</a>
+    <a href="#formacao" class="js-link">Formação</a>
+    <a href="curriculo.pdf" target="_blank">Currículo</a>
+    <a href="https://wa.link/llwejl" class="btn">Contato</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
 
-                    <p> Aqui estão algumas tecnologias com as quais estou familiarizada:</p>
+<section id="inicio" class="section inicio">
+  <img src="imagens/foto.jpg" alt="Foto Crislaine" class="perfil" />
+  <h1>Crislaine Caetano</h1>
+  <h2>Estudante de Engenharia de Software</h2>
 
-                    <div class="container">
-                        <div> <h1 class="font"><span style="color: #000;font-size: 30px;">Front-end</span></h1>
-                        <div class="logo-tec">
-                          <img src="imagens/HTML1.png" alt="html" width="80px" height="80px"><span class="icone-tec"> HTML</span>
-                        </div>
+  <div class="redes">
+    <a href="mailto:criscaetano12k@gmail.com">Email</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://github.com/criscaetano3" target="_blank">GitHub</a>
+  </div>
+</section>
 
-                        <div class="logo-tec">
-                        
-                           <img src="imagens/CSS1.png" alt="css" width="80px" height="80px"><span class="icone-tec">CSS</span>
-                        </div>
+<section id="sobre" class="section">
+  <h2>Sobre Mim</h2>
+  <p>
+    Sou estudante de Engenharia de Software pela UNINTER, com interesse em
+    desenvolvimento web, suporte técnico, testes de software e qualidade.
+    Busco aprendizado contínuo e aplicação prática dos conhecimentos em
+    projetos reais.
+  </p>
+</section>
 
-                        <div class="logo-tec">
-                         
-                          <img src="imagens/javascrip1.png" alt="JavaScript" width="80px" height="80px"><span class="icone-tec">JavaScript</span>
-                        </div>
+<section id="tecnologias" class="section">
+  <h2>Tecnologias</h2>
+  <div class="tech-grid">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Python</div>
+    <div>MySQL</div>
+    <div>GitHub</div>
+  </div>
+</section>
 
-                        <div class="logo-tec">
-                         
-                          <img src="imagens/figma.png" alt="figma" width="80px" height="80px"><span class="icone-tec">Figma</span>
-                        </div>
-                        </div>
-                    
-                    <div> <h1 class="font"><span style="color: #000;font-size: 30px;">Back-End</span></h1>
+<section id="habilidades" class="section">
+  <h2>Habilidades</h2>
+  <ul class="skills">
+    <li>Organização e atenção aos detalhes</li>
+    <li>Resolução de problemas</li>
+    <li>Aprendizado contínuo</li>
+    <li>Trabalho em equipe</li>
+  </ul>
+</section>
 
-                        <div class="logo-tec">
-                          <img src="imagens/python1.png" alt="python" width="80px" height="80px"><span class="icone-tec">python</span>
-                        </div>
+<section id="projetos" class="section">
+  <h2>Projetos</h2>
 
-                        <div class="logo-tec">
-                          <img src="imagens/mysql1.png" alt="mysql" width="80px" height="80px"><span class="icone-tec">MySQL</span>
-                        </div>
 
-                        <div class="logo-tec">
-                          <img src="imagens/GitHub1.png" alt="github"  width="80px" height="80px"><span class="icone-tec">GitHub</span>
-                        </div>
-                        
-                    
-                    </div>
-                   
-                </div>
+  <div class="projects">
 
-            </section>
-            <!-- Página minhas Habilidades -->
-             <section class="section" id="minhas-habilidades">
-                <h1 class="titulo"><span style="color: rgb(255, 85, 0);font-size: 50px;">Minhas Habilidades</span></h1>
-                <div class="container-habilidade"> 
-                    <div>
-                        <div class="txt">Aprendizado ininterrupto
-                          <span class="hab">A tecnologia nunca para de melhorar, <br>por isso quem trabalha com tecnologia <br> também  nunca para de aprender.</span>
-                        </div>
+    <div class="project-card">
+      <h3>Portfólio Pessoal</h3>
+      <p>
+        Desenvolvimento de um portfólio profissional responsivo, criado para apresentar meu perfil, habilidades técnicas, projetos e formação acadêmica. O projeto foi estruturado com foco em organização do código, usabilidade, acessibilidade básica e experiência do usuário, incluindo navegação intuitiva, layout moderno e suporte a modo claro e escuro.
+      </p>
 
-                        <div class="txt">Comunicação
-                           <span class="hab">Capacidade de se expressar ideaias de forma <br> clara e concisa, facilitando a colaboração <br> com colegas de equipe e clientes.</span>
-                        </div>
+      <p>
+        <span class="label">Tecnologias:</span> HTML, CSS, JavaScript
+      </p>
 
-                        <div class="txt">Mente Aberta
-                             <span class="hab">Quando você trabalha com outras pessoa, <br> você prescisa aceitar novas ideias de clientes <br>ou colegas de equipe e ser capaz de trabalhar <br> nelas.</span>  
-                        </div>
+      <p>
+        <span class="label">Destaques técnicos:</span> responsividade, organização semântica, controle de tema (claro/escuro), boas práticas de front-end.
+      </p>
 
-                        <div class="txt">Adaptabilidade
-                             <span class="hab">Capacidade de se adaptar a novos desafios <br> e ambientes de trabalho, lidando de forma <br>eficaz com mudanças e imprevisto.</span>
-                        </div>
+      <a href="https://criscaetano3.github.io/Meu-portif-lio/" target="_blank">Ver projeto</a>
+    </div>
 
-                        <div class="txt">Trabalho em equipe
-                             <span class="hab">Habilidade de trabalhar de forma colaborativa <br>em equipe, contribuindo com suas habilidades <br>e ideias para alcançar objetivos comuns.</span>
-                        </div>
-                    </div>
-                    <div>
-        
-                        <div class="txt">Resolução de Problemas 
-                             <span class="hab">Capacidade de indentificar, analisar e resolver <br>problemas de forma eficaz, buscando soluções <br>criativas e inovadoras.</span>
-                        </div>
+    <div class="project-card">
+      <h3>Lugares Interessantes</h3>
+      <p>
+        Aplicação web informativa desenvolvida para apresentar pontos históricos e culturais de diferentes países. O projeto prioriza a estruturação clara do conteúdo, design organizado e experiência visual agradável, utilizando boas práticas de front-end para facilitar a navegação e leitura das informações.
+      </p>
 
-                        <div class="txt">Orgazição  e tempo
-                             <span class="hab">Capacidade de organizar tarefas, estabelecer <br>prioridades e gerenciar o tempo de forma <br> eficaz para cumprir prazos e objetivos.</span>
-                        </div>
+      <p>
+        <span class="label">Tecnologias:</span> HTML, CSS, JavaScript
+      </p>
 
-                        <div class="txt">Pensamento crítico
-                             <span class="hab">Habilidade de analisar iformações de forma <br>crítica, avaliando diferentes perspectivas e <br>tomando decisões  fundamentais.</span>
-                        </div>
+      <p>
+        <span class="label">Destaques técnicos:</span> layout responsivo, organização de conteúdo, foco na experiência do usuário.
+      </p>
 
-                        <div class="txt">Proatividade
-                             <span class="hab">Iniciativa para buscar novas oportunidades, <br>assumir responsabilidades e agir <br>antecipadamente para evitar problemas.</span>
-                        </div>
+      <a href="https://criscaetano3.github.io/Lugares-interessant/" target="_blank">Ver projeto</a>
+    </div>
 
-                        <div class="txt">Resiliência
-                             <span class="hab">Capacidade de enfrentar desafios e <br> adversidades com determinação e otimismo, <br> buscando aprender e crescer com as experiências.</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+    <div class="project-card">
+      <h3>Previsão do Tempo</h3>
+      <p>
+        Aplicação web que consome dados climáticos para exibir informações de previsão do tempo em tempo real. Utiliza JavaScript para tratamento de dados, manipulação do DOM e atualização dinâmica da interface, proporcionando uma experiência interativa ao usuário.
+      </p>
 
-             </section>
-            <!-- Página Meus serviços Contratáveis -->
-             <section class="section" id="msc">
-                <h1><span style="color: rgb(255, 85, 0); font-size: 50px;"> Meus Serviços Contratáveis</span></h1>
+      <p>
+        <span class="label">Tecnologias:</span> HTML, CSS, JavaScript, API externa
+      </p>
 
-                <div class="serviços">
-                    <div>
-                    
-                        <div class="caixa">
-                            <h1>Desenvolvimento de aplicação de web</h1>
-                            <p class="ft">Criação de aplicações de web completa, <br> incluido parte visual e a parte lógica <br>que interagem entre si para entregar <br>a funcionalidade desejada.</p>
-                        </div>
-                        <div class="caixa">
-                            <h1>Criação de Sites</h1>
-                            <p class="ft">Transformo suas ideias em um site profissional <br> e atrativo, focado em transmitir sua mensagem <br>de forma clara e eficaz.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="caixa">
-                            <h1>Desenvolvimento de web site</h1> 
-                           <p class="ft"> Construção completa de sites, desde a página <br> inicial até as páginas internas, com foco <br> em designer, usabilidade e desempenho.</p>
-                        </div>
-                    
-                        <div class="caixa">
-                            <h1>Gerenciamento em banco de dados</h1>
-                            <p class="ft">Armazenamento, organização e recuperação <br>de dados.</p>
-                        </div>
-                    </div>
+      <p>
+        <span class="label">Destaques técnicos:</span> consumo de API, manipulação de dados, atualização dinâmica da interface.
+      </p>
 
-                </div>
-                <!-- Página meus projetos -->
-             </section>
-             <section class="section" id="mp">
-                <h1><span style="color: rgb(255, 85, 0); font-size: 50px;">Meus Projetos</span></h1>
-                <p class="text">Esses são alguns projetos pessoais:</p>
-                <div class="projetos">
-                    <article class="container-proj">
+      <a href="https://criscaetano3.github.io/Previsao-Tempo/" target="_blank">Ver projeto</a>
+    </div>
 
-                            <a href="https://criscaetano3.github.io/Meu-portif-lio/">
-                                <div class="project-box proje">
-                                    <div class="info-project"> <p>Projeto 01</p>
-                                       <span class="tex">Esse projeto é o meu portifólio trazendo <br> informações relevante sobre mim. </span>
-                                    </div>
-                                </div> 
-                            </a>
+    <div class="project-card">
+      <h3>Contador de Rebanho</h3>
+      <p>
+        Sistema em desenvolvimento que simula a automação da contagem de animais em um rebanho, com foco em lógica de programação, organização de dados e validação de entradas. O projeto representa a aplicação de tecnologia no agronegócio, explorando conceitos de automação e controle.
+      </p>
 
-                            <a href="https://criscaetano3.github.io/Lugares-interessant/">
-                                <div class="project-box proje1">
-                                    <div class="info-project"> <p>Projeto 02</p>
-                                       <span class="tex">O objetivo desse projeto é mostrar  os lugares <br>histórico e culturas de outros países para <br> explorar.</span>
-                                    </div>
-                                </div> 
-                            </a>
+      <p>
+        <span class="label">Tecnologias:</span> JavaScript, lógica de programação, estruturação de dados
+      </p>
 
-                            <a href="https://criscaetano3.github.io/Previsao-Tempo/">
-                                <div class="project-box proje2">
-                                    <div class="info-project"><p>Projeto 03</p>
-                                         <span class="tex">Esse projeto mostra a previsão do tempo <br>que oferece informações sobre as condições <br>climática em tempo real.</span>
-                                    </div>
-                                </div>
-                            </a>
-                           
+      <p>
+        <span class="label">Destaques técnicos:</span> automação de processos, validação de dados, aplicação prática de lógica computacional.
+      </p>
 
-                    </article>
+      <a href="https://criscaetano3.github.io/contadorRebanho/">Ver projeto</a>
+    </div>
 
-                </div>
-             </section>
-             
-             <!-- Página Formação Acadêmica -->
-             <section class="section" id="Formação academica">
-                <h1><span style="color: rgb(255, 85, 0); font-size: 50px;">Formação Acadêmica</span></h1>
-                <h3 class="text2"> <span style="font-size: 40px;">Cursando:</span></h3>
+  </div>
+</section>
 
-                <div class="container-formacao">
-                     <div class="logo-uninter">
-                        <img src="imagens/uninter.png" alt="uninter" width="200px" height="200px">
-                    </div>
-                    <div class="caixa">
-                        <p class="ano">2025</p>
-                        <h3 class="text1">Bacharelado</h3>
-                        <p>Engeharia de Software</p>
-                        <p class="txt">Cento de Universidade Internacional (UNINTER)</p>
-                    </div>
-                </div>
-                <div class="container-formacao">
-                     <div class="logo-uninter">
-                        <img src="imagens/uninter.png" alt="uninter" width="200px" height="200px">
-                    </div>
-                    <div class="caixa">
-                         <p class="ano">2025</p>
-                        <h3 class="text1">Curso</h3>
-                        <p>Inglês</p>
-                        <p class="txt">Cento de Universidade Internacional (UNINTER)</p>
-                    </div>
-                </div>
-               
-            </section>
-        </main>  
+  </div>
+</section>
+
+<section id="formacao" class="section">
+  <h2>Formação</h2>
+  <p><strong>Engenharia de Software</strong></p>
+  <p>Centro Universitário Internacional-UNINTER <br> Situação: Cursando <br> (Conclusão prevista: 2029)</p>
+</section>
+
+<footer class="footer">
+  <p>© 2026 • Crislaine Caetano</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
